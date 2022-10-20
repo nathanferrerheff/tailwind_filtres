@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		// on copie-colle dans "settings" :
+		"liveSassCompile.settings.formats": [
+			{
+				"format": "compressed",
+				"extensionName": ".min.css",
+				"savePath": "/src"
+			}
+		],
+
+		"liveSassCompile.settings.excludeList": [
+            "/scss/bootstrap/**",
+        ]
+		// watch sass ne va pas minifier les fichiers bootstrap
+	}
+}

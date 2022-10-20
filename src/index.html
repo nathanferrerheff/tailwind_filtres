@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../dist/output.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="md:container md:mx-auto">
+        <div class="min-h-screen items-center justify-center p-5">
+            <h1 class="text-3xl font-bold flex justify-center">
+                Tailwind : Les filters
+            </h1>
+            <div class="flex space-x-8">
+                <div class="grid grid-cols-4 gap-4">
+                    <div class="card p-5">
+                        <img class="shadow-xl rounded-lg transition duration-300 filter hover:grayscale"
+                            src="https://images.unsplash.com/photo-1473496169904-658ba7c44d8a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&h=1000&q=80"
+                            alt="" />
+                        <p class="flex justify-center">grayscale</p>
+                    </div>
+                    <div class="card p-5">
+                        <img class="shadow-xl rounded-lg transition duration-300 filter hover:sepia"
+                            src="https://images.unsplash.com/photo-1473496169904-658ba7c44d8a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&h=1000&q=80"
+                            alt="" />
+                        <p class="flex justify-center">sepia</p>
+                    </div>
+                    <div class="card p-5">
+                        <img class="shadow-xl rounded-lg transition duration-300 filter blur-sm hover:blur-lg"
+                            src="https://images.unsplash.com/photo-1473496169904-658ba7c44d8a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&h=1000&q=80"
+                            alt="" />
+                        <p class="flex justify-center">blur-lg</p>
+                    </div>
+                    <div class="card p-5">
+                        <img class="shadow-xl rounded-lg transition duration-300 filter hover:contrast-200"
+                            src="https://images.unsplash.com/photo-1473496169904-658ba7c44d8a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&h=1000&q=80"
+                            alt="" />
+                        <p class="flex justify-center">contrast-200</p>
+                    </div>
+                    <div class="card p-5">
+                        <img class="shadow-xl rounded-lg transition duration-300 filter hover:brightness-200"
+                            src="https://images.unsplash.com/photo-1473496169904-658ba7c44d8a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&h=1000&q=80"
+                            alt="" />
+                        <p class="flex justify-center">brightness-200</p>
+                    </div>
+                    <div class="card p-5">
+                        <img class="shadow-xl rounded-lg transition duration-300 filter hover:hue-rotate-180"
+                            src="https://images.unsplash.com/photo-1473496169904-658ba7c44d8a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&h=1000&q=80"
+                            alt="" />
+                        <p class="flex justify-center">hue-rotate-180</p>
+                    </div>
+                    <div class="card p-5">
+                        <img class="shadow-xl rounded-lg transition duration-300 filter hover:invert"
+                            src="https://images.unsplash.com/photo-1473496169904-658ba7c44d8a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&h=1000&q=80"
+                            alt="" />
+                        <p class="flex justify-center">invert</p>
+                    </div>
+                    <div class="card p-5">
+                        <img class="shadow-xl rounded-lg transition duration-300 filter hover:saturate-200"
+                            src="https://images.unsplash.com/photo-1473496169904-658ba7c44d8a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&h=1000&q=80"
+                            alt="" />
+                        <p class="flex justify-center">saturate-200</p>
+                    </div>
+                    <div class="card p-5">
+                        <img class="shadow-xl rounded-lg border-4 border-rose-500 transition duration-300 filter hover:drop-shadow-2xl"
+                            src="https://images.unsplash.com/photo-1473496169904-658ba7c44d8a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&h=1000&q=80"
+                            alt="" />
+                        <p class="flex justify-center">drop-shadow-2xl</p>
+                    </div>
+                </div>
+            </div>
+            <!-- backdrop filters-->
+            <div class="h-96 relative m-5">
+                <div class="absolute w-full h-full">
+                    <img class="h-80 w-full object-cover rounded-2xl"
+                        src="https://images.unsplash.com/photo-1473496169904-658ba7c44d8a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&h=1000&q=80"
+                        alt="" />
+                </div>
+                <div class="relative h-full flex overflow-x-auto space-x-80">
+                    <div class="flex-shrink-0 rounded-2xl w-full"></div>
+                    <!-- opacité -->
+                    <div class="flex-shrink-0 rounded-2xl w-1/3 border-4 border-rose-500 backdrop-filter backdrop-opacity-30 backdrop-invert h-80"></div>z
+                    <div class="flex-shrink-0 rounded-2xl w-1/3 border-4 border-black backdrop-filter backdrop-grayscale h-80"></div>
+                    <div class="flex-shrink-0 rounded-2xl w-1/3 border-4 border-black backdrop-filter backdrop-sepia h-80"></div>
+                    <div class="flex-shrink-0 rounded-2xl w-1/3 border-4 border-black backdrop-filter backdrop-blur-lg h-80"></div>
+                    <div class="flex-shrink-0 rounded-2xl w-1/3 border-4 border-black backdrop-filter backdrop-contrast-200 h-80"></div>
+                    <div class="flex-shrink-0 rounded-2xl w-1/3 border-4 border-black backdrop-filter backdrop-brightness-200 h-80"></div>
+                    <div class="flex-shrink-0 rounded-2xl w-1/3 border-4 border-black backdrop-filter backdrop-hue-rotate-180 h-80"></div>
+                    <div class="flex-shrink-0 rounded-2xl w-1/3 border-4 border-black backdrop-filter backdrop-invert h-80"></div>
+                    <div class="flex-shrink-0 rounded-2xl w-1/3 border-4 border-black backdrop-filter backdrop-saturate-200 h-80"></div>
+                    <!-- plusieurs filtres -->
+                    <div class="flex-shrink-0 rounded-2xl w-1/3 border-4 border-rose-500 backdrop-filter backdrop-grayscale backdrop-blur-md backdrop-contrast-200 h-80"></div>
+                    <div class="flex-shrink-0 rounded-2xl w-full"></div>
+                </div>
+            </div>
+            <!-- backdrop filters-->
+        </div>
+    </div>
+</body>
+
+</html>
